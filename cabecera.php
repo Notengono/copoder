@@ -34,7 +34,7 @@
 <nav class="navbar navbar-expand-lg main-navbar">
     <div class="container">
         <!-- LOGO -->
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.php">
             <div class="logo-container">
                 <div class="logo-placeholder">
                     <img src="images/logo.jpg" class="d-block w-100" alt="COPODER">
@@ -90,6 +90,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contacto.html">
                         Contacto
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-success" href="contacto.html">
+                        Acceso Colegiados
                     </a>
                 </li>
             </ul>
