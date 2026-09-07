@@ -62,36 +62,61 @@
                         Inicio
                     </a>
                 </li>
-
+                <!-- INICIO | INSTITUCIONAL ▼ | MATRICULADOS ▼ | OBRAS SOCIALES ▼ | NOTICIAS |  ACCESO MATRICULADOS -->
+                <!-- Desplegables: -->
+                <!-- INSTITUCIONAL ▼: El Colegio · Autoridades · Historia · Normativa/legislación -->
+                <!-- MATRICULADOS ▼: Padrón/Buscar matriculado · Matriculación · Trámites · Beneficios -->
+                <!-- OBRAS SOCIALES ▼: Convenios · Información  -->
+                <!-- NOTICIAS -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Institucional
                     </a>
                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="colegio.php">El Colegio</a></li>
                         <li><a class="dropdown-item" href="autoridades.php">Autoridades</a></li>
-                        <li><a class="dropdown-item" href="matriculados.php">Matriculados</a></li>
-                        <li><a class="dropdown-item" href="mapa.php">Mapa</a></li>
+                        <li><a class="dropdown-item" href="historia.php">Historia</a></li>
+                        <li><a class="dropdown-item" href="normativa.php">Normativa/Legislación</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Matriculados
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="matriculados.php">Padrón/Buscar matriculado</a></li>
+                        <li><a class="dropdown-item" href="mapa.php">Padrón/Buscar en Mapa</a></li>
+                        <li><a class="dropdown-item" href="matriculacion.php">Matriculación</a></li>
+                        <li><a class="dropdown-item" href="tramites.php">Trámites</a></li>
+                        <li><a class="dropdown-item" href="benaficios.php">Beneficios</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Obas sociales
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="canvenios.php">Convenios</a></li>
+                        <li><a class="dropdown-item" href="informacion.php">Información</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="matriculacion.html">
-                        Matriculación
+                    <a class="nav-link" href="noticias.html">
+                        Noticias
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="profesionales.html">
-                        Profesionales
-                    </a>
-                </li>
-
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="contacto.html">
                         Contacto
                     </a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="btn btn-outline-success" href="contacto.html">
                         Acceso Colegiados

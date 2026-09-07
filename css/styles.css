@@ -30,6 +30,24 @@ img {
     max-width: 100%;
 }
 
+.colegio {
+    font-size: 26px;
+    color: #227DEE;
+    text-align: justify;
+    text-indent: 5em;
+    margin: 0 auto;
+    width: 710px;
+}
+
+.imgColegio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* height: 100vh; */
+    height: 1.25%;
+}
+
 /* ========================================================= */
 /* TOPBAR */
 /* ========================================================= */
