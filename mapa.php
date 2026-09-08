@@ -88,7 +88,7 @@
                     const misPuntos = [{
                             lat: -31.729497,
                             lon: -60.517112,
-                            nombre: "Podología Paraná"
+                            nombre: "Pamela Oliva"
                         },
                         {
                             lat: -31.729439,
@@ -115,7 +115,56 @@
                             lat: -31.7292715,
                             lon: -60.5388496,
                             nombre: "Colegio de Podólogos de Entre Ríos"
+                        }, {
+                            lat: -31.7482629,
+                            lon: -60.5252907,
+                            nombre: "Porta Rosario"
+                        }, {
+                            lat: -31.7431268,
+                            lon: -60.5200328,
+                            nombre: "Lascano Clotilde Maria Catalina"
+                        }, {
+                            lat: -31.731328,
+                            lon: -60.5280582,
+                            nombre: "Bonifacino Maria Cristina"
+                        }, {
+                            lat: -31.7231849,
+                            lon: -60.5356131,
+                            nombre: "Faria De Cantero Nora Guadalupe"
+                        }, {
+                            lat: -31.7278828,
+                            lon: -60.5224988,
+                            nombre: "Costa Toro Iris Beatriz"
+                        }, {
+                            lat: -31.7268281,
+                            lon: -60.5219514,
+                            nombre: "Frick Guillermo Adolfo"
+                        }, {
+                            lat: -31.7266055,
+                            lon: -60.4911067,
+                            nombre: "Arguello Ivana Vanina"
+                        }, {
+                            lat: -31.7372979,
+                            lon: -60.4862857,
+                            nombre: "Arguello Gonzalo Ricardo"
+                        }, {
+                            lat: -31.7447598,
+                            lon: -60.5224588,
+                            nombre: "Barbeito Patricia Maria Lucia"
+                        }, {
+                            lat: -31.724392,
+                            lon: -60.5347772,
+                            nombre: "Zuttion Marta Ester"
+                        }, {
+                            lat: -31.7402988,
+                            lon: -60.5426973,
+                            nombre: ""
                         }
+                        // , {
+                        //     lat: ,
+                        //     nombre: ""
+                        // }
+
                     ];
 
                     // Filtrar y graficar solo los puntos dentro del rango

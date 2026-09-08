@@ -30,17 +30,17 @@
                 <span>Colegio</span>
                 <h2>Historia del Colegio de Podólogos de Entre Ríos</h2>
             </div>
-        </div>
+        <!-- </div>
     </section>
 
     <section>
-        <div class="container">
-            <img class="imgColegio" src="images/logo.jpg" alt="Colegio de Podólogos de Entre Ríos.">
+        <div class="container"> -->
+            <img class="imgColegio" src="images/logo.png" alt="Colegio de Podólogos de Entre Ríos.">
             <!-- <img class="imgColegio" src="images/logoCopoder (1).png" alt="Colegio de Podólogos de Entre Ríos."> -->
-        </div>
+        <!-- </div>
     </section>
     <section>
-        <div class="container">
+        <div class="container"> -->
             <p class="colegio">
                 <!-- # Una historia que se construyó paso a paso -->
                 <!-- ## Los comienzos: cuando una profesión empezó a buscar su lugar -->
@@ -77,8 +77,6 @@
             </p>
         </div>
     </section>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

@@ -28,18 +28,26 @@
         <div class="container">
             <div class="section-title">
                 <span>Colegio</span>
-                <h2>Institucional</h2>
+                <h2>El Colegio</h2>
             </div>
         </div>
-    </section>
 
-    <section>
         <div class="container">
-            <img class="imgColegio" src="images/logo.jpg" alt="Colegio de Podólogos de Entre Ríos.">
+            <img class="imgColegio" src="images/logo.png" alt="Colegio de Podólogos de Entre Ríos.">
             <!-- <img class="imgColegio" src="images/logoCopoder (1).png" alt="Colegio de Podólogos de Entre Ríos."> -->
         </div>
+
+        <div class="container">
+            <p class="colegio">
+                El Colegio de Podólogos de Entre Ríos es la institución que nuclea a los profesionales matriculados de la provincia. Su labor está orientada a fortalecer y jerarquizar el ejercicio de la podología, promover la formación y actualización profesional y contribuir al cuidado de la salud de la comunidad.
+            </p>
+
+            <p class="colegio">
+                A través de su actividad institucional, acompaña a los matriculados, fomenta el ejercicio profesional responsable y trabaja por el reconocimiento y desarrollo de la podología en Entre Ríos.
+            </p>
+        </div>
     </section>
-    <section>
+    <!-- <section>
         <div class="container">
             <p class="colegio">
                 Este medio de comunicación, innovación y apertura al mundo digital nos abre las puertas de una podología que avanza, crece y se forma como una profesión valorada cada vez más por el ámbito sanitario como así también una sociedad que se interioriza y preocupa por la salud de sus pies.
@@ -48,10 +56,8 @@
                 Desde el colegio de podólogos de Entre Ríos reiteramos nuestro más cordial saludo.
             </p>
         </div>
-    </section>
+    </section> -->
 
-    
-    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

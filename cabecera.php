@@ -117,10 +117,13 @@
                         Contacto
                     </a>
                 </li> -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="btn btn-outline-success" href="contacto.html">
                         Acceso Colegiados
                     </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link btn" href="contacto.html">Acceso Colegiados</a>
                 </li>
             </ul>
 
