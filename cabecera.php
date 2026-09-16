@@ -58,7 +58,7 @@
         <div class="collapse navbar-collapse" id="mainMenu">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">
+                    <a class="nav-link active" href="index.php">
                         Inicio
                     </a>
                 </li>
@@ -107,7 +107,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="noticias.html">
+                    <a class="nav-link" href="noticias.php">
                         Noticias
                     </a>
                 </li>

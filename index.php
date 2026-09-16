@@ -251,169 +251,30 @@
     <!-- ========================================================= -->
 
     <section class="news-section">
-
         <div class="container">
-
             <div class="section-title">
-
                 <span>ACTUALIDAD</span>
-
                 <h2>
                     Noticias y capacitaciones
                 </h2>
-
             </div>
-
-
             <div class="row g-5">
-
-
                 <!-- ================================================= -->
                 <!-- NOTICIAS - 70% -->
                 <!-- ================================================= -->
-
                 <div class="col-lg-8">
-
                     <div class="content-title">
-
                         <h3>
                             Últimas noticias
                         </h3>
-
-                        <a href="noticias.html">
+                        <a href="noticias.php">
                             Ver todas
                             <i class="bi bi-arrow-right"></i>
                         </a>
-
                     </div>
 
-
-                    <!-- NOTICIA 1 -->
-
-                    <article class="news-card">
-
-                        <div class="news-image">
-
-                            <img src="images/noticia-01.jpg" alt="Noticia">
-
-                        </div>
-
-
-                        <div class="news-content">
-
-                            <div class="news-date">
-
-                                <i class="bi bi-calendar3"></i>
-
-                                13 de agosto de 2026
-
-                            </div>
-
-                            <h4>
-                                Nueva propuesta de capacitación para profesionales
-                            </h4>
-
-                            <p>
-                                El Colegio presenta nuevas actividades destinadas
-                                a la actualización y formación continua.
-                            </p>
-
-                            <a href="noticia.html?id=1" class="read-more">
-
-                                Leer más
-                                <i class="bi bi-arrow-right"></i>
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- NOTICIA 2 -->
-
-                    <article class="news-card">
-
-                        <div class="news-image">
-
-                            <img src="images/noticia-02.jpg" alt="Noticia">
-
-                        </div>
-
-
-                        <div class="news-content">
-
-                            <div class="news-date">
-
-                                <i class="bi bi-calendar3"></i>
-
-                                8 de agosto de 2026
-
-                            </div>
-
-                            <h4>
-                                Información para profesionales matriculados
-                            </h4>
-
-                            <p>
-                                Conocé las últimas novedades institucionales.
-                            </p>
-
-                            <a href="noticia.html?id=2" class="read-more">
-
-                                Leer más
-                                <i class="bi bi-arrow-right"></i>
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- NOTICIA 3 -->
-
-                    <article class="news-card">
-
-                        <div class="news-image">
-
-                            <img src="images/noticia-03.jpg" alt="Noticia">
-
-                        </div>
-
-
-                        <div class="news-content">
-
-                            <div class="news-date">
-
-                                <i class="bi bi-calendar3"></i>
-
-                                1 de agosto de 2026
-
-                            </div>
-
-                            <h4>
-                                Actualización de información institucional
-                            </h4>
-
-                            <p>
-                                Todas las novedades del Colegio de Podólogos
-                                de Entre Ríos.
-                            </p>
-
-                            <a href="noticia.html?id=3" class="read-more">
-
-                                Leer más
-                                <i class="bi bi-arrow-right"></i>
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
+                    <div id="contenedorNoticias"></div>
                 </div>
-
 
                 <!-- ================================================= -->
                 <!-- CAPACITACIONES - 30% -->
@@ -598,7 +459,7 @@
 
                     <p>
                         <i class="bi bi-envelope"></i>
-                        contacto@colegiopodologos-er.org.ar
+                        contacto@colegiopodologos-er.ar
                     </p>
 
                     <p>
@@ -673,6 +534,7 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
+    <script src="js/noticia_index.js"></script>
 </body>
 
 </html>
