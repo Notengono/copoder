@@ -31,126 +31,71 @@
     <!-- ========================================================= -->
 
     <section class="hero">
-
         <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-
             <!-- INDICADORES -->
-
             <div class="carousel-indicators">
-
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active">
-                </button>
-
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1">
-                </button>
-
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2">
-                </button>
-
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"> </button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
             </div>
-
-
             <div class="carousel-inner">
-
-
                 <!-- SLIDE 1 -->
-
                 <div class="carousel-item active">
-
                     <a href="noticia.html?id=1">
-
                         <img src="images/slide-01.jpg" class="d-block w-100" alt="Información institucional">
-
                         <div class="carousel-caption">
-
                             <h2>
                                 Colegio de Podólogos de Entre Ríos
                             </h2>
-
                             <p>
                                 Información institucional y novedades
                             </p>
-
                         </div>
-
                     </a>
-
                 </div>
 
-
                 <!-- SLIDE 2 -->
-
                 <div class="carousel-item">
-
                     <a href="noticia.html?id=2">
-
                         <img src="images/slide-02.jpg" class="d-block w-100" alt="Capacitación profesional">
-
                         <div class="carousel-caption">
-
                             <h2>
                                 Capacitación profesional
                             </h2>
-
                             <p>
                                 Conocé nuestras próximas actividades
                             </p>
-
                         </div>
-
                     </a>
-
                 </div>
 
-
                 <!-- SLIDE 3 -->
-
                 <div class="carousel-item">
-
                     <a href="noticia.html?id=3">
-
                         <img src="images/slide-03.jpg" class="d-block w-100" alt="Información para matriculados">
-
                         <div class="carousel-caption">
-
                             <h2>
                                 Información para matriculados
                             </h2>
-
                             <p>
                                 Accedé a toda la información del Colegio
                             </p>
-
                         </div>
-
                     </a>
-
                 </div>
-
             </div>
 
-
             <!-- PREVIOUS -->
-
             <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-
                 <span class="carousel-control-prev-icon"></span>
-
             </button>
-
 
             <!-- NEXT -->
-
             <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-
                 <span class="carousel-control-next-icon"></span>
-
             </button>
-
         </div>
-
     </section>
-
 
     <!-- ========================================================= -->
     <!-- ACCESOS RÁPIDOS -->

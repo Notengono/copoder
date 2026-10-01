@@ -18,8 +18,8 @@ async function cargarNoticia() {
         // mostrarNoticia(noticia);
 
     } catch (error) {
-        console.error(error);
-        mostrarError();
+        // console.error(error);
+        // mostrarError();
     }
 }
 

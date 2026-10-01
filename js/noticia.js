@@ -7,7 +7,7 @@ async function cargarNoticia() {
     const id = params.get('id');
 
     if (!id) {
-        mostrarError();
+        // mostrarError();
         return;
     }
 
@@ -28,7 +28,7 @@ async function cargarNoticia() {
 
     } catch (error) {
         console.error(error);
-        mostrarError();
+        // mostrarError();
     }
 }
 
