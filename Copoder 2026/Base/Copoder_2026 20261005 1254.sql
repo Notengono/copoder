@@ -1,0 +1,338 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.5.5-10.4.24-MariaDB
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema copoder
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ copoder;
+USE copoder;
+
+--
+-- Table structure for table `copoder`.`laboral`
+--
+
+DROP TABLE IF EXISTS `laboral`;
+CREATE TABLE `laboral` (
+  `mp` int(10) unsigned NOT NULL DEFAULT 0,
+  `direccion` varchar(50) DEFAULT NULL,
+  `telefono` varchar(16) DEFAULT NULL,
+  `latitud` varchar(10) DEFAULT NULL,
+  `longitud` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`mp`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `copoder`.`laboral`
+--
+
+/*!40000 ALTER TABLE `laboral` DISABLE KEYS */;
+/*!40000 ALTER TABLE `laboral` ENABLE KEYS */;
+
+
+--
+-- Table structure for table `copoder`.`noticias`
+--
+
+DROP TABLE IF EXISTS `noticias`;
+CREATE TABLE `noticias` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(45) DEFAULT NULL,
+  `categoria` varchar(45) DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `imagen` varchar(45) DEFAULT NULL,
+  `resumen` varchar(254) DEFAULT NULL,
+  `contenido` blob DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `copoder`.`noticias`
+--
+
+/*!40000 ALTER TABLE `noticias` DISABLE KEYS */;
+INSERT INTO `noticias` (`id`,`titulo`,`categoria`,`fecha`,`imagen`,`resumen`,`contenido`) VALUES 
+ (1,'Jornada de actualización profesional','INSTITUCIONAL','2026-09-15','./images/noticia-01.jpg','El Colegio de Podólogos de Entre Ríos presenta una nueva jornada de actualización profesional.',0x3C703E456C20436F6C6567696F20646520506F64C3B36C6F676F7320646520456E7472652052C3AD6F7320696E76697461206120746F646F73206C6F732070726F666573696F6E616C6573206D6174726963756C61646F73206120706172746963697061722E2E2E3C2F703E3C703E4C6120616374697669646164207365206465736172726F6C6C6172C3A12E2E2E3C2F703E3C68323E50726F6772616D613C2F68323E3C703E447572616E7465206C61206A6F726E6164612073652061626F72646172C3A16E2E2E2E3C2F703E),
+ (2,'Asamblea General Ordinaria','Institucional','2022-06-02','./images/noticia-002.jpg','El Consejo Directivo del Colegio de Podólogos de Entre Ríos convoca a Asamblea General Ordinaria',0x3C703E446520636F6E666F726D696461642061206C6F2065737461626C656369646F20656E20656C20617274C3AD63756C6F203233206465206C61204C65792038313739207920737520617274C3AD63756C6F20323120696E632E20332064656C204465637265746F205265676C616D656E746172696F204E203332303320656C20436F6E73656A6F2044697265637469766F2064656C20436F6C6567696F20646520506F64C3B36C6F676F7320646520456E7472652052C3AD6F7320636F6E766F63612061204173616D626C65612047656E6572616C204F7264696E61726961207061726120656C2064C3AD61203235206465204A756E696F20646520323032322061206C6173203920687320656E20656C2043697263756C6F206465205375626F66696369616C6573206465206C6120467565727A612041C3A9726561207369746F20656E2063616C6C652042656C6772616E6F20313537206465206C612063697564616420646520506172616EC3A12E3C2F703E0D0A2020202020202020202020202020202020202020202020203C703E204F7264656E2064656C2064C3AD613A203C2F703E0D0A2020202020202020202020202020202020202020202020203C703E203C623E50756E746F20313A3C2F623E2050616C6162726173206465206269656E76656E6964612E204D696E75746F2064652073696C656E63696F2E203C2F703E0D0A2020202020202020202020202020202020202020202020203C703E3C623E50756E746F20323A3C2F623E204A757261206465206E7565766F7320636F6C656761732E3C2F703E0D0A2020202020202020202020202020202020202020202020203C703E3C623E50756E746F20333A3C2F623E204C65637475726120646520616374617320616E746572696F7265732079206D656D6F72696120616E75616C2E3C2F703E0D0A2020202020202020202020202020202020202020202020203C703E3C623E50756E746F20343A3C2F623E204170726F62616369C3B36E2064652062616C616E636520706572696F646F2032303231202D20323032322E3C2F703E0D0A2020202020202020202020202020202020202020202020203C703E3C623E50756E746F20353A3C2F623E20496E666F726D6520417365736F726120636F6E7461626C65206120636172676F206465206C6120636F6E7461646F726120416C69636961205363687761727A6B6F70662E3C2F703E0D0A2020202020202020202020202020202020202020202020203C703E3C623E50756E746F20363A3C2F623E20496E666F726D65206C6567616C206120636172676F2064656C2041626F6761646F204361726C6F7320436163657265732E3C2F703E0D0A2020202020202020202020202020202020202020202020203C703E3C623E50756E746F20373A3C2F623E2050616C6162726173206120636172676F2064656C20636F6C6567612043726973746869616E20466572726F2E3C2F703E0D0A2020202020202020202020202020202020202020202020203C703E3C623E50756E746F20383A3C2F623E2074726174616D69656E746F2064652061756D656E746F206465206C612063756F746120736F63696574617269612E3C2F703E0D0A2020202020202020202020202020202020202020202020203C703E3C623E50756E746F20393A3C2F623E204170726F62616369C3B36E206465206F7267616E696772616D612079207265676C616D656E746F206465206173616D626C65613C2F703E0D0A2020202020202020202020202020202020202020202020203C703E3C623E50756E746F2031303A3C2F623E2052656E6F76616369C3B36E207061726369616C206465206C6120436F6D697369C3B36E204469726563746976612E3C2F703E0D0A2020202020202020202020202020202020202020202020203C703E3C623E50756E746F2031313A3C2F623E204576656E7475616C65732E3C2F703E0D0A2020202020202020202020202020202020202020202020203C703E4C61204173616D626C65612066756E63696F6E6172C3A12076C3A16C6964616D656E746520636F6E206375616C7175696572206EC3BA6D65726F206465206173697374656E74657320747261736375727269646F73203130206D696E75746F7320646573646520656C20686F726172696F2065737461626C656369646F2070617261206C61206D69736D612E20536520726563756572646120717565206C61204173616D626C6561204F7264696E61726961206573206465206361726761207075626C6963612C20706F72206C6F206375616C206C6120696E6173697374656E636961206465626520736572206A7573746966696361646120706F72206D6564696F2064652065737461626C6563696D69656E746F732070C3BA626C69636F73206573746174616C65732C206C61206E6F206173697374656E63696120736572C3A1206D756C7461646120636F6E206C61206E6F726D617469766120766967656E74652E2D3C2F703E);
+/*!40000 ALTER TABLE `noticias` ENABLE KEYS */;
+
+
+--
+-- Table structure for table `copoder`.`personal`
+--
+
+DROP TABLE IF EXISTS `personal`;
+CREATE TABLE `personal` (
+  `mp` int(10) unsigned NOT NULL DEFAULT 0,
+  `apellido` varchar(45) DEFAULT NULL,
+  `nombre` varchar(45) DEFAULT NULL,
+  `localidad` varchar(45) DEFAULT NULL,
+  `os` varchar(2) DEFAULT NULL,
+  `correo` varchar(65) DEFAULT NULL,
+  `titulo` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`mp`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `copoder`.`personal`
+--
+
+/*!40000 ALTER TABLE `personal` DISABLE KEYS */;
+/*!40000 ALTER TABLE `personal` ENABLE KEYS */;
+
+
+--
+-- Table structure for table `copoder`.`usuarios_copo`
+--
+
+DROP TABLE IF EXISTS `usuarios_copo`;
+CREATE TABLE `usuarios_copo` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(60) DEFAULT NULL,
+  `identificacion` varchar(45) NOT NULL DEFAULT '',
+  `clave` varchar(70) NOT NULL DEFAULT '',
+  `habilitado` char(1) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2484 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `copoder`.`usuarios_copo`
+--
+
+/*!40000 ALTER TABLE `usuarios_copo` DISABLE KEYS */;
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (7,'Campos Eduardo Humberto','campose','7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451','1'),
+ (9,'Giqueaux Nelida Leonor','GIQUEAUXN','19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7','1'),
+ (16,'Musuliotis Helena Atenas','MUSULIOTISH','b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9','1'),
+ (17,'Passarella Nelida','PASSARELLAN','4523540f1504cd17100c4835e85b7eefd49911580f8efff0599a8f283be6b9e3','1'),
+ (21,'Arcusin Rita','ARCUSINR','6f4b6612125fb3a0daecd2799dfd6c9c299424fd920f9b308110a2c1fbd8f443','1'),
+ (30,'Villanueva Emilce Leonor','VILLANUEVAE','624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4','1'),
+ (37,'Ledesma Hector Felipe','LEDESMAH','7a61b53701befdae0eeeffaecc73f14e20b537bb0f8b91ad7c2936dc63562b25','1'),
+ (47,'Jufre Ema De Lavarello','JUFREE','31489056e0916d59fe3add79e63f095af3ffb81604691f21cad442a85c7be617','1'),
+ (58,'Arcusin Ruth De Novidelsky','ARCUSINN','6208ef0f7750c111548cf90b6ea1d0d0a66f6bff40dbef07cb45ec436263c7d6','1'),
+ (60,'Ledri Cristina','LEDRIC','39fa9ec190eee7b6f4dff1100d6343e10918d044c75eac8f9e9a2596173f80c9','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (69,'Porta Rosario','PORTAR','c75cb66ae28d8ebc6eded002c28a8ba0d06d3a78c6b5cbf9b2ade051f0775ac4','1'),
+ (71,'Ladron De Guevara Silvia De M.','GUEVARAS','7f2253d7e228b22a08bda1f09c516f6fead81df6536eb02fa991a34bb38d9be8','1'),
+ (73,'Mendoza Marta','MENDOZAM','96061e92f58e4bdcdee73df36183fe3ac64747c81c26f6c83aada8d2aabb1864','1'),
+ (75,'Gabioud Adriana','GABIOUDA','f369cb89fc627e668987007d121ed1eacdc01db9e28f8bb26f358b7d8c4f08ac','1'),
+ (95,'Vera Stella Maris De Plaza','VERAS','ad48ff99415b2f007dc35b7eb553fd1eb35ebfa2f2f308acd9488eeb86f71fa8','1'),
+ (102,'Ledesma Teresita','LEDESMAT','37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1','1'),
+ (110,'Lascano Clotilde De Spring','LASCANOC','9bdb2af6799204a299c603994b8e400e4b1fd625efdb74066cc869fee42c9df3','1'),
+ (120,'Rocha Domingo Clotario','ROCHAD','2abaca4911e68fa9bfbf3482ee797fd5b9045b841fdff7253557c5fe15de6477','1'),
+ (123,'Bonifacino Ma Cristina','BONIFACINOM','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','1'),
+ (128,'Perez Agnes Andrea','PEREZA','2747b7c718564ba5f066f0523b03e17f6a496b06851333d2d59ab6d863225848','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (130,'Faria Nora De Cantero','FARIAN','38d66d9692ac590000a91b03a88da1c88d51fab2b78f63171f553ecc551a0c6f','1'),
+ (132,'Dunn Carlos Fernando','dunnc','dbb1ded63bc70732626c5dfe6c7f50ced3d560e970f30b15335ac290358748f6','1'),
+ (133,'Costa Iris Beatriz De Toro','COSTAI','d2f483672c0239f6d7dd3c9ecee6deacbcd59185855625902a8b1c1a3bd67440','1'),
+ (134,'Olier Violeta Ma Itati','OLIERV','5d389f5e2e34c6b0bad96581c22cee0be36dcf627cd73af4d4cccacd9ef40cc3','1'),
+ (136,'Bonasegla Pablo','BONASEGLAP','36ebe205bcdfc499a25e6923f4450fa8d48196ceb4fa0ce077d9d8ec4a36926d','1'),
+ (137,'Franco Griselda','FRANCOG','d80eae6e96d148b3b2abbbc6760077b66c4ea071f847dab573d507a32c4d99a5','1'),
+ (140,'Ferro Cristhian','FERROC','dbae772db29058a88f9bd830e957c695347c41b6162a7eb9a9ea13def34be56b','1'),
+ (141,'Garofalo Ma Olga','GAROFALOM','2c7d5490e6050836f8f2f0d496b1c8d6a38d4ffac2b898e6e77751bdcd20ebf5','1'),
+ (145,'Trupiano Maria Belen','TRUPIANOM','be47addbcb8f60566a3d7fd5a36f8195798e2848b368195d9a5d20e007c59a0c','1'),
+ (146,'Rolando Nora','ROLANDON','0a5b046d07f6f971b7776de682f57c5b9cdc8fa060db7ef59de82e721c8098f4','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (147,'Comar Romina','COMARR','1d28c120568c10e19b9d8abe8b66d0983fa3d2e11ee7751aca50f83c6f4a43aa','1'),
+ (148,'Frick Guillermo Adolfo','FRICKG','ec2e990b934dde55cb87300629cedfc21b15cd28bbcf77d8bbdc55359d7689da','1'),
+ (151,'Brscacin Alejandro','BRSCACINA','8e612bd1f5d132a339575b8dafb7842c64614e56bcf3d5ab65a0bc4b34329407','1'),
+ (152,'Herbel Claudia','HERBELC','043066daf2109523a7490d4bfad4766da5719950a2b5f96d192fc0537e84f32a','1'),
+ (154,'Arguello Gonzalo','ARGUELLOG','1d0ebea552eb43d0b1e1561f6de8ae92e3de7f1abec52399244d1caed7dbdfa6','1'),
+ (155,'Stojhwski Mariza','STOJHWSKIM','210e3b160c355818509425b9d9e9fd3ea2e287f2c43a13e5be8817140db0b9e6','1'),
+ (156,'Frau Maria Cecilia','FRAUM','0fecf9247f3ddc84db8a804fa3065c013baf6b7c2458c2ba2bf56c2e1d42ddd4','1'),
+ (157,'Polero Patricia','POLEROP','c75de23d89df36ba921287616ee8edb4c986e328a78e033e57c1e5e2b59c838e','1'),
+ (159,'Barbeito Patricia','BARBEITOP','ff2ccb6ba423d356bd549ed4bfb76e96976a0dcde05a09996a1cdb9f83422ec4','1'),
+ (160,'Gareis Gladis','GAREISG','a512db2741cd20693e4b16f19891e72b9ff12cead72761fc5e92d2aaf34740c1','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (161,'Grenat Silvina Cecilia','GRENATS','bb668ca95563216088b98a62557fa1e26802563f3919ac78ae30533bb9ed422c','1'),
+ (162,'Zuttion Marta Ester','ZUTTIONM','79d6eaa2676189eb927f2e16a70091474078e2117c3fc607d35cdc6b591ef355','1'),
+ (163,'Zulian Adriana','ZULIANA','3d3286f7cd19074f04e514b0c6c237e757513fb32820698b790e1dec801d947a','1'),
+ (164,'Martinez Dora Emilia','MARTINEZD','3f9807cb9ae9fb6c30942af6139909d27753a5e03fe5a5c6e93b014f5b17366f','1'),
+ (165,'Tataren Daniel Gastón','TATAREND','bc52dd634277c4a34a2d6210994a9a5e2ab6d33bb4a3a8963410e00ca6c15a02','1'),
+ (166,'Oliva Pamela Natali','OLIVAP','e0f05da93a0f5a86a3be5fc0e301606513c9f7e59dac2357348aa0f2f47db984','1'),
+ (167,'Alarcon Ana Maria','ALARCONA','73d3f1ba062585bce51f77d70a26be88c44b55d70f81b8bd7e2ded030ca4454a','1'),
+ (168,'Avaca Lucrecia Lorena','AVACAL','80c3cd40fa35f9088b8741bd8be6153de05f661cfeeb4625ffbf5f4a6c3c02c4','1'),
+ (169,'Greco Angela Estela','GRECOA','f57e5cb1f4532c008183057ecc94283801fcb5afe2d1c190e3dfd38c4da08042','1'),
+ (170,'Avaca Alejandra Beatriz','AVACAA','734d0759cdb4e0d0a35e4fd73749aee287e4fdcc8648b71a8d6ed591b7d4cb3f','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (171,'Bravo Maria Eugenia','BRAVOM','284de502c9847342318c17d474733ef468fbdbe252cddf6e4b4be0676706d9d0','1'),
+ (173,'Verreyt Julio Daniel','VERREYTJ','4a8596a7790b5ca9e067da401c018b3206befbcf95c38121854d1a0158e7678a','1'),
+ (174,'Sersewitz Virginia','SERSEWITZV','41e521adf8ae7a0f419ee06e1d9fb794162369237b46f64bf5b2b9969b0bcd2e','1'),
+ (176,'Ronchi Maria De Los Angeles','RONCHIM','cba28b89eb859497f544956d64cf2ecf29b76fe2ef7175b33ea59e64293a4461','1'),
+ (177,'Tropini Maria Teresa','TROPINIM','8cd2510271575d8430c05368315a87b9c4784c7389a47496080c1e615a2a00b6','1'),
+ (178,'Debevc Veronica','DEBEVCV','01d54579da446ae1e75cda808cd188438834fa6249b151269db0f9123c9ddc61','1'),
+ (179,'Sajnin Diana','SAJNIND','3068430da9e4b7a674184035643d9e19af3dc7483e31cc03b35f75268401df77','1'),
+ (180,'Delmas Silvia Viviana','DELMASS','7b69759630f869f2723875f873935fed29d2d12b10ef763c1c33b8e0004cb405','1'),
+ (181,'Tanaro Juan Carlos','TANAROJ','580811fa95269f3ecd4f22d176e079d36093573680b6ef66fa341e687a15b5da','1'),
+ (182,'Sanchez Paola','SANCHEZP','bfa7634640c53da7cb5e9c39031128c4e583399f936896f27f999f1d58d7b37e','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (184,'Lorenzon Gabriela','LORENZONG','52f11620e397f867b7d9f19e48caeb64658356a6b5d17138c00dd9feaf5d7ad6','1'),
+ (186,'Correa Griselda','CORREAG','2811745d7b8d8874f6e653d176cefdd19e05e920ce389b9b7e83e5b2dfa546c7','1'),
+ (187,'Cucinatto Clarisa','CUCINATTOC','38b2d03f3256502b1e9db02b2d12aa27a46033ffe6d8c0ef0f2cf6b1530be9d8','1'),
+ (188,'Costa Sandra Lorena','COSTAS','d6061bbee6cf13bd73765faaea7cdd0af1323e4b125342ac346047f7c4bda1fc','1'),
+ (189,'Lopez Rita','LOPEZR','7045d16ae7f043ec25774a0a85d6f479e5bb019e9c5a1584bc76736d116b8f33','1'),
+ (190,'Folmer Patricia','FOLMERP','2397346b45823e070f6fc72ac94c0a999d234c472479f0e26b30cdf5942db854','1'),
+ (193,'Betancurt Lidia','BETANCURTL','684fe39f03758de6a882ae61fa62312b67e5b1e665928cbf3dc3d8f4f53e3562','1'),
+ (194,'Girardo Laura','GIRARDOL','7559ca4a957c8c82ba04781cd66a68d6022229fca0e8e88d8e487c96ee4446d0','1'),
+ (196,'Obispo Leticia','OBISPOL','b4bbe448fde336bb6a7d7d765f36d3327c772b845e7b54c8282aa08c9775ddd7','1'),
+ (197,'Bosc Hector Marcelo','BOSCH','8bcbb4c131df56f7c79066016241cc4bdf4e58db55c4f674e88b22365bd2e2ad','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (198,'Arce Marta','ARCEM','a4e00d7e6aa82111575438c5e5d3e63269d4c475c718b2389f6d02932c47f8a6','1'),
+ (199,'Bruna Maria Candela','BRUNAM','5a39cadd1b007093db50744797c7a04a34f73b35ed444704206705b02597d6fd','1'),
+ (200,'Facundo Almada','FACUNDOA','27badc983df1780b60c2b3fa9d3a19a00e46aac798451f0febdca52920faaddf','1'),
+ (201,'Barzola Andrea Silvana','BARZOLAA','43974ed74066b207c30ffd0fed5146762e6c60745ac977004bc14507c7c42b50','1'),
+ (202,'Paz Maria Eugenia','PAZM','c17edaae86e4016a583e098582f6dbf3eccade8ef83747df9ba617ded9d31309','1'),
+ (203,'Rodriguez Patricia Alejandra','RODRIGUEZP','4621c1d55fa4e86ce0dae4288302641baac86dd53f76227c892df9d300682d41','1'),
+ (204,'De Mauricio Natalia Graciela','DEMAURICION','fc56dbc6d4652b315b86b71c8d688c1ccdea9c5f1fd07763d2659fde2e2fc49a','1'),
+ (205,'Aguilera Marta Noemi','AGUILERAM','f8809aff4d69bece79dabe35be0c708b890d7eafb841f121330667b77d2e2590','1'),
+ (206,'Tachella Prado Paula Andrea','TACHELLAP','5cf4e26bd3d87da5e03f80a43a64f1220a1f4ba9e1d6348caea83c06353c3f39','1'),
+ (207,'Bonifacino Agostina','BONIFACINOA','968076be2e38cf897d4d6cea3faca9c037e1a4e3b4b7744fb2533e07751bd30a','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (208,'Robledo Marien Anabel','ROBLEDOM','8df66f64b57424391d363fd6b811fed3c430c77597da265025728bd637bad804','1'),
+ (209,'Marizza Ma. Antonella','MARIZZAM','83f814f7a92e365cbd79f9addceed185761a8d38a06a2d4350bb1fe4b7632b34','1'),
+ (210,'Nuñez Juan Jose','NUÑEZJ','d29d53701d3c859e29e1b90028eec1ca8e2f29439198b6e036c60951fb458aa1','1'),
+ (211,'Furios Monica','FURIOSM','093434a3ee9e0a010bb2c2aae06c2614dd24894062a1caf26718a01e175569b8','1'),
+ (212,'Chavez Martha Margarita','CHAVEZM','fa2b7af0a811b9acde602aacb78e3638e8506dfead5fe6c3425b10b526f94bdd','1'),
+ (213,'Matsuyama Joanna','MATSUYAMAJ','d48ff4b2f68a10fd7c86f185a6ccede0dc0f2c48538d697cb33b6ada3f1e85db','1'),
+ (214,'Kloss Juliana','KLOSSJ','802b906a18591ead8a6dd809b262ace4c65c16e89764c40ae326cfcff811e10c','1'),
+ (215,'Muñoz Sandra Mariela','MUÑOZS','d86580a57f7bf542e85202283cb845953c9d28f80a8e651db08b2fc0b2d6a731','1'),
+ (216,'Garcia Maria Cristina','GARCIAM','0f4121d0ef1df4c86854c7ebb47ae1c93de8aec8f944035eeaa6495dd71a0678','1'),
+ (217,'Gonzalez Maria Victoria','GONZALEZM','16badfc6202cb3f8889e0f2779b19218af4cbb736e56acadce8148aba9a7a9f8','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (218,'Rodriguez Norma Edith','RODRIGUEZN','5966abd0cbfc86f98a186531b2b4ee5f6e910120ce13222f98207203dfc9a9a2','1'),
+ (219,'Castillo Maria Beatriz','CASTILLOM','314f04b30f62e0056bd059354a5536fb2e302107eed143b5fa2aa0bbba07f608','1'),
+ (220,'Jozani Karen Antonella','JOZANIK','36790ecd55c2030dc553685bef719df653f413a20cdad1bfd1dc934c76686ddd','1'),
+ (222,'Chaparro Rocio','CHAPARROR','9b871512327c09ce91dd649b3f96a63b7408ef267c8cc5710114e629730cb61f','1'),
+ (223,'Niez Maria Elisa','NIEZM','56f4da26ed956730309fa1488611ee0f13b0ac95ebb1bc9b5d210e31ff70e79c','1'),
+ (224,'Tommasi Arias Nerea','tommasia','84a5092e4a5b6fe968fd523fb2fc917dbffae44105f82b6b94c8ed5b9a800223','1'),
+ (225,'Sotelo Zulema','SOTELOZ','0e6523810856a138a75dec70a9cf3778a5c70b83ac915f22c33f05db97cb3e68','1'),
+ (226,'Figueroa Ma. De Los Milagros','FIGUEROAM','8f1f64db81c40ea10e1e9080c9ae60a7acb8925968c431ee16784dea9841c66f','1'),
+ (227,'Galeano Sara','GALEANOS','dfe62e836a0a6f2633422230c81287700a56e2639652c73f264e6562220c207a','1'),
+ (228,'Inosemtzeff Griselda','INOSEMTZEFFG','9d693eeee1d1899cbc50b6d45df953d3835acf28ee869879b45565fccc814765','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (229,'Perez Seeling Evangelina','PEREZE','08490295488a1189099751ebeddb5992313dd2a831e07a92e66d196ddc261777','1'),
+ (230,'Pocai Veronica','POCAIV','a0eaec5a55dc2f5b2ba523018adc485ff620b9d83509b9f37186a7716e438d21','1'),
+ (231,'Astengo Susana','ASTENGOS','138d9e809e386a7b800791d1f664f56d1c55f3d1ba411b950862729bc486c5ce','1'),
+ (232,'Urcula Erica Emilce','URCULAE','835d5e8314340ab852a2f979ab4cd53e994dbe38366afb6eed84fe4957b980c8','1'),
+ (233,'Berón Ines Marisol','BERONI','c0509a487a18b003ba05e505419ebb63e57a29158073e381f57160b5c5b86426','1'),
+ (234,'Velazquez Flavia B.','VELAZQUEZF','114bd151f8fb0c58642d2170da4ae7d7c57977260ac2cc8905306cab6b2acabc','1'),
+ (235,'Rosskam Mirian Teresita','ROSSKAMM','0a2d643bfd24a028cd236e76575d828424ccffbfa47392bd09d8ca9dc85e2f8d','1'),
+ (236,'Lozada Silvia Isabel','LOZADAS','9a049b03f6fc40bfcf2f136320359257ed4af8513f71aa6fef47f17059bbae23','1'),
+ (237,'Permayu Carina Claudia','PERMAYUC','f0bc318fb8965cad8d73d578cd03c63b7987dc6a79b906aada091e1b6a13443f','1'),
+ (238,'Rodriguez Jacqueline','RODRIGUEZJ','8ae4c23b80d1e7c8ff79e515fe791ebd68190bae842dda7af193db125f700452','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (239,'Corrales Maria Natalia','CORRALESM','79bf08685d3138f9b109c3546780f056bc954fd69377b84a2cf23622e464897b','1'),
+ (240,'Toledo Adriana Guadalupe','TOLEDOA','6af1f692e9496c6d0b668316eccb93276ae6b6774fa728aac31ff40a38318760','1'),
+ (241,'Modenutti Ileana Belen','MODENUTTII','749fc650cacb0f06547520d53c31505c8156e0a3be07073eddb2ef3ad9e383ba','1'),
+ (242,'Arlettaz Brenda','ARLETTAZB','14063697603e22d600d336bee6cff12c8be93509ce84a0642918d89b2aef1753','1'),
+ (243,'Casse Luciana','CASSEL','72440a20f54075ac43f51a2cf0dbb2a14366b38a5c01b110ae174abc1cb44238','1'),
+ (244,'Banchero Kevin Lujan','BANCHEROK','82c01ce15b431d420eb6a1febfba7d7a2b69e5bcdcb929cb42cd3e9179d43fc4','1'),
+ (245,'Cerbin Belen Evangelina Marisa','CERBINB','011af72a910ac4acf367eef9e6b761e0980842c30d4e9809840f4141d5163ede','1'),
+ (246,'Benitez Marina Silvana','BENITEZM','37c20f19f3272b5ccc3a5d80587eb9deb3f4afcf568c4280fb195568da8eb1a2','1'),
+ (247,'De Giusto María Lorena','DEGIUSTOM','396f804443825586c1283a27fdcadf74abb82008bcd9b260a30912a26563f27d','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (248,'Senger Lorena Andrea','SENGERL','766cb53c753baedac5dc782593e04694b3bae3aed057ac2ff98cc1aef6413137','1'),
+ (249,'Blanc Marisol','BLANCM','9f484139a27415ae2e8612bf6c65a8101a18eb5e9b7809e74ca63a45a65f17f4','1'),
+ (250,'Piana Tamara Belen','PIANAT','1e472b39b105d349bcd069c4a711b44a2fffb8e274714bb07ecfff69a9a7f67b','1'),
+ (251,'ROMEROR','ROMEROR','c75d3f1f5bcd6914d0331ce5ec17c0db8f2070a2d4285f8e3ff11c6ca19168ff','1'),
+ (252,'Cosso Maria de los Angeles','COSSOM','d6e5a20b30f87216b2c758f5e7a23c437dbc3dfa1ccb177c474de152bb0ef731','1'),
+ (253,'Moreyra Raquel Fabiana','MOREYRAR','e7866fdc6672f827c76f6124ca3eeaff44aff8b7caf4ee1469b2ab887e7e7875','1'),
+ (254,'Zandomeni Brenda Ileana','ZANDOMENIB','9512d95d00d61bdec03d2b99d6ecc455ee5644ae52d10e7c4a61c93062dc97a3','1'),
+ (255,'Premaries Giuliana Belen','premariesg','9556b82499cc0aaf86aee7f0d253e17c61b7ef73d48a295f37d98f08b04ffa7f','1'),
+ (256,'Luggren Maria Paola','luggrenm','51e8ea280b44e16934d4d611901f3d3afc41789840acdff81942c2f65009cd52','1'),
+ (257,'Faez Claudia Carina','faezc','4c970004b0678d439f177e77d3cabdb7e9a44df770948ddc2467cbc76b7211c3','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (258,'Tonello Silvina Elizabeth','tonellos','a30f4ef42176d28f0e2293533c5f532e9c9c5696c68813b35315d17edc44f6b1','1'),
+ (259,'Erbes Retamozo Ileana Solange','erbesr','7c252ab334fb8fd88e8242c4972c21db9c7ce0b47c9acc4ebfe40c14614cb734','1'),
+ (260,'Princic Corona Camila','princicc','39bb88f40d3aa2b2fe9dea67be27c74765db0ebb3ff3cf8fb779af6319fa2045','1'),
+ (261,'Clemente Melina Alejandra','clementem','e888a676e1926d0c08b5f11fb9116df58b62604b05846f39f8d6fc4dd0ba31f1','1'),
+ (262,'Duarte Jessica Belen','duartej','9e6a72557ada15d02001f024f43f06edc4a31437e0e1bb3eeac36ca2d0c4fda7','1'),
+ (263,'Santana Silvina Noemi','santanas','4be84111a613654b362415e563cb7607df7b203b5d303802a8a546061bbc7847','1'),
+ (264,'Santomil Joel Norman','santomilj','bba58959c32abe688d9cb5222b97de973002a67c412d6a8c8d2a79ac692f32b7','1'),
+ (265,'Lopez Sofia Rocio','lopezs','768b84ef05f655d57fe22d488451f075365f6cd18a13073466aa826cc0ebdbfb','1'),
+ (266,'Visintin Ana Carina','visintina','ea5b27556fbb134def2c2fbf944d9cdda3dbdb6b10473a1aec59f6f170c4ca3a','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (267,'Iglesias Mirta Alicia','IGLESEASA','8acc23987b8960d83c44541f9f0eb46454cea080ea94d916f56fccf033db866f','1'),
+ (268,'Nuñez Noelia De Valle','nunezn','8b496bf96bbcc9e5ac11c068b6cfb00c32f9d163bb8a3d5af107217499de997a','1'),
+ (269,'Colazo Rosana Vanesa','COLAZOR','f747870ae666c39b589f577856a0f7198b3b81269cb0326de86d8046f2cf72db','1'),
+ (270,'Sosa Hilda Delia','SOSAH','d8d1790737d57ac4fe91a2c0a28087c0a97c81f5dc6b19d5e4aec20c08bb95ae','1'),
+ (271,'Fernandez Alicia Raquel','FERNANDEZA','3635a91e3da857f7847f68185a116a5260d2593f3913f6b1b66cc2d75b0d6ec0','1'),
+ (272,'Cardoso Maira Georgina','CARDOSOM','1c6c0bb2c7ecdc3be8e134f79b9de45155258c1f554ae7542dce48f5cc8d63f0','1'),
+ (273,'Dechanzi Ana Carolina','DECHANZIA','303c8bd55875dda240897db158acf70afe4226f300757f3518b86e6817c00022','1'),
+ (275,'Michel Jesica Walquiria','MICHELJ','3a1dfb05d7257530e6349233688c3e121945c5de50f1273a7620537755d61e45','1'),
+ (276,'Ortiz Aubone Maria Eugenia','ortiza','c76b405781134be1dab7fe45adfb8c32104805a01de7b863e1004b66d56edf9f',''),
+ (277,'Nuñez Maria Alejandra','nunezma','27d719c754aacd492a6dc8a1b76619355abcf5ef473cbec02018d3c57ebbf0d5','');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (278,'Olivera Jesica Alejandra','oliveraj','ee62de25ccc2b55d3a0495244b246fb97055b6f1c2697d837b8e94976c03756f',''),
+ (279,'Fita Luis Emanuel','fital','efd96aedf377e20afd95285a7c751a864260bd6a149656a4040c5b7757bdbbb6',''),
+ (280,'Ledesma Sergio Javier','ledesmas','7f0a22117f8fe0172cf9209ff622b64a51aaeda21d58b5b62685a93dbe2dad25',''),
+ (281,'Carrere Vanina Solange','carrerev','71a1c003a2b855d85582c8f6c7648c49d3fe836408a7e1b5d9b222448acb3c1b',''),
+ (282,'Molina Maria Belen','molinab','27e1615212f3c6ea846ed6c412df1361ce97f006ee20bb5aa2483a3b61d5cadd',''),
+ (283,'Sanchez Maria Luisa','sanchezm','e0850a775c17a87060c0cf6efad1020e0cbef5a44ba942bef6add5776598de53',''),
+ (284,'Correa Alejandra Emilia','correaa','1e68ed4e3d58a51096a7feea3947f40debf1fd9246ec977eb62ab93c81823ad9',''),
+ (285,'Brites Lorena Estefania','britesl','a0d177b4967a6d99f4ff117defe1c0d23d4e78ca4630febcb948ee9e4520eff3',''),
+ (286,'Caraballo Sana Lidia Ines','caraballos','00328ce57bbc14b33bd6695bc8eb32cdf2fb5f3a7d89ec14a42825e15d39df60',''),
+ (287,'Schultheis Tamara Nahir','schultheist','d7cdaa5ca0582076c8e772cce739e32c5077cfd24f2ea33f04bb754594989a56','');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (288,'Sonderegger Florencia','sondereggerf','23c657f2efda7731a3c1990b25f318fa2eb1332208f97ab9cc2a7eac70ab5a76',''),
+ (289,'Correa Liza Camila','correal','af180e4359fc6179dc953abdcbdcaf7c146b53e1bee2b335e50dead11ccefa07',''),
+ (290,'Holotte Karen Nahir','holottek','09895de0407bcb0386733daa14bdb5dfa544505530c634334a05a60f161b71fc',''),
+ (291,'Cacciavillani Jaquelina Del Huerto','cacciavillanij','33512007840ced1bb0aab68f47cb5f702abd494a15f26bcbe26a1e47af03d841',''),
+ (292,'Meroi Aranzazu Maria Del Rosario','meroia','6db6eb4af1e18ab81d3878e44672185d60ca8c988c9e2f7783de220735534c33',''),
+ (293,'Aguilar Celia Fabiana','aguilarc','7cb676d57114874e00c536916e6dcad2a5d3cb8c9a5abc06335df359cd9a6ef9',''),
+ (294,'Baez Mariana Lorena','baezm','2cfc8ccbd7c0b17615323b41e815651ff2ae9ffae45a4599c0499b98ff940429',''),
+ (295,'Retamar Noeliz Noemi','retamarn','9cfd3c755be26b4e1645918e2a64a26e3d851ede421e0b257f783b443bc443d1',''),
+ (296,'Astengo Alejandro Victorino','astengoa','a0f8b2c4cb1ac82abdb37f0fe5203b97be556c4468c83bba18684d620fd8eaf9','');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (297,'Rios Gabriela Beatriz','riosg','4c15f47afe7f817fd559e12ddbc276f4930c5822f2049088d6f6605bec7cea56',''),
+ (298,'Villa Laura Diana','villal','76ebdb6d45c61ca12e622118cc90939ade672adf7890aa2b246405d4884dd75a',''),
+ (299,'Larrea Laureano Jesus Maria','larreal','308831041ea4863c3f87d222c31f759411898c874a9006b4bd6c745858b8f3bd',''),
+ (300,'Almiron Dana Agostina','almirond','983bd614bb5afece5ab3b6023f71147cd7b6bc2314f9d27af7422541c6558389',''),
+ (301,'Benedetti Andrea Mariela','benedettia','c3ea99f86b2f8a74ef4145bb245155ff5f91cd856f287523481c15a1959d5fd1',''),
+ (302,'Mego Lucrecia Maria Soledad','megol','f32828acecb4282c87eaa554d2e1db74e418cd6845843012463a3324028bdd9d',''),
+ (303,'Byczek Ximena Flavia','byczekx','8bd9c0d453533757387ed019c45617cdc440ba680a67b1a101c85b998ef715c0',''),
+ (304,'Servin Yanina Analia','serviny','d874e4e4a5df21173b0f83e313151f813bea4f488686efe670ae47f87c177595',''),
+ (305,'Van Cauwenberghe Lara Denise','vanl','090d3859ff6840b2280f4708cf08cdaed873d967183a4d1deedc1a7964a21eee',''),
+ (306,'Fleyta Marianela Rocio','fleytam','38b83caefa1ef26940f1d07bd4ec94c60809b0f88f2118e82ef8ec2d98938a84','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (307,'Ruiz Berta Natalia','ruizbn','6d976934be74941fba578b143ba964eded443d10384e3f3d62a1ba7b4d339df8','1'),
+ (308,'Lencina Marta Florencia','lencinamf','48a1706eca5ee6148f748ca91a0f7db6ebcf59943532044a7bf60bbe44e5b1d2','1'),
+ (309,'Vesco Pamela','vescop','43c727ee4fc7250574d2ef90cfa16626388a10e1b30d36ece1c272953ad2ed9e','1'),
+ (310,'Ledesma Aranda Richar Osmar','ledesmaaro','226f76b55acb49701e06ded1d95165d179458f6fc37f5c6fc760ae30dec1c378','1'),
+ (311,'Romero Gabriela Beatriz','romerogb','20e9c64c05a54d199610fb7e38135361324b5ed5dcf39c23afe9b48926c07376','1'),
+ (312,'Podesta Aline Edith','podestaae','865736a1c30a82dc67aba820360a01b1d9d0da5643234cd07c4d60b06eb530c5','1'),
+ (313,'Spahn Roskopf Sabrina','spahnrs','8efbbe9bc19ad2e043c6cdb187c0a0fedde70b6458443ce0b5648ec04ccf4cdf','1'),
+ (314,'Caceres Cristina Mabel','cacerescm','748064be03a08df81e31bd6f9e7e7c4cc9f84b4401b9a3c6e85b7ff816d3ba68','1'),
+ (315,'Santill Malvina Soledad','santillms','377adeb4cd4096adc7ca64b533938cffc6294a9b3534f883b2336a26252cda9a','1'),
+ (316,'Velazquez Elsa Josefina','velazquezej','7a20311cf7a4b222d436424480bc65dd0f9d2cefcbbb1fa148ca0d7e1d5bb55a','1');
+INSERT INTO `usuarios_copo` (`id`,`nombre`,`identificacion`,`clave`,`habilitado`) VALUES 
+ (317,'Gorosito Ivana Agostina','gorositoia','8d1ede4f889e0ed6f0823d8c1821905b9de37a0f851dc270df0dbf72b3c93641','1'),
+ (318,'Cardozo Barbara Yamila','cardozoby','aae02129362d611717b6c00ad8d73bf820a0f6d88fca8e515cafe78d3a335965','1'),
+ (319,'Ramirez Maria Laura','ramirezml','156091ee0884f36de9836d58b6f05f357ec6ef0620c571577ac61f7beac35f8e','1'),
+ (320,'Valenzuela Valeria Alejandra','valenzuelava','88820462180e5c893eff2ed73f4ec33e205d1cd5acc4d17fa7b2bca2495d3448','1'),
+ (321,'Befart Gimena Magali','befartgm','8d23cf6c86e834a7aa6eded54c26ce2bb2e74903538c61bdd5d2197997ab2f72','1'),
+ (322,'Kranevitter Silvana Valeria','kranevitterav','f10d91a7596bf5a6773579ff1306afdc363b0be08602c768907c09261cad3a56','1'),
+ (328,'Minaglia Lila','minaglial','2452984f72ef1195df62ab3f23748777dbf39767229425f1bfd0862d476e5840','1');
+/*!40000 ALTER TABLE `usuarios_copo` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
