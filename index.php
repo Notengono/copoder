@@ -353,15 +353,11 @@
 
                 </div>
 
-
                 <div class="col-lg-3">
-
                     <h5>
                         Navegación
                     </h5>
-
                     <ul>
-
                         <li>
                             <a href="#">
                                 Inicio

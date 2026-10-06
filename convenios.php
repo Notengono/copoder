@@ -27,28 +27,18 @@
     <section class="quick-access">
         <div class="container">
             <div class="section-title">
-                <span>Colegio</span>
-                <h2>El Colegio</h2>
+                <span>Obras Sociales</span>
+                <h2>Convenios</h2>
             </div>
         </div>
     </section>
 
     <section>
         <div class="container">
-            <img class="imgColegio" src="images/logo.png" alt="Colegio de Podólogos de Entre Ríos.">
-            <!-- <img class="imgColegio" src="images/logoCopoder (1).png" alt="Colegio de Podólogos de Entre Ríos."> -->
-        </div>
+            <!-- <img class="imgColegio" src="images/logo.png" alt="Colegio de Podólogos de Entre Ríos.">
+            OBRA_SOCIALES_Y_MUTUALES_CONVENIOS_261006_112515.pdf -->
 
-        <div class="container">
-            <p class="colegio">
-                El Colegio de Podólogos de Entre Ríos es la institución que nuclea a los profesionales matriculados de la provincia y gobierna el ejercicio de la matrícula profesional.
-            </p>
-            <p class="colegio">
-                Su labor está orientada a fortalecer y jerarquizar el ejercicio de la podología, promover la formación y actualización profesional, acompañar a sus matriculados y contribuir al cuidado de la salud de la comunidad.
-            </p>
-            <p class="colegio">
-                Asimismo, trabaja en la prevención y actuación frente al intrusismo y al ejercicio ilegal de la profesión, promoviendo una práctica responsable y velando por el cumplimiento de las normas que regulan la actividad profesional en la provincia de Entre Ríos.
-            </p>
+            <iframe src="./assets/files/OBRA_SOCIALES_Y_MUTUALES_CONVENIOS_261006_112515.pdf#toolbar=0" width="100%" height="600px"></iframe>
         </div>
     </section>
 

@@ -101,7 +101,7 @@
                         Obas sociales
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="canvenios.php">Convenios</a></li>
+                        <li><a class="dropdown-item" href="convenios.php">Convenios</a></li>
                         <li><a class="dropdown-item" href="informacion.php">Información</a></li>
                     </ul>
                 </li>

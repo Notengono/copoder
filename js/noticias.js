@@ -3,155 +3,155 @@
  *
  * Ejemplo de paginación local.
  * Posteriormente los datos pueden venir de Slim Framework.
- */
+*/
 
-const noticias = [
+let noticias = []
 
-    {
-        id: 1,
-        titulo: 'Jornada de actualización profesional',
-        fecha: '2026-09-15',
-        imagen: 'images/noticia-01.jpg',
-        resumen: 'Información sobre la próxima jornada del Colegio.'
-    },
+//     {
+//         id: 1,
+//         titulo: 'Jornada de actualización profesional',
+//         fecha: '2026-09-15',
+//         imagen: 'images/noticia-01.jpg',
+//         resumen: 'Información sobre la próxima jornada del Colegio.'
+//     },
 
-    {
-        id: 2,
-        titulo: 'Novedades para profesionales matriculados',
-        fecha: '2026-09-12',
-        imagen: 'images/noticia-02.jpg',
-        resumen: 'Comunicaciones y novedades institucionales.'
-    },
+//     {
+//         id: 2,
+//         titulo: 'Novedades para profesionales matriculados',
+//         fecha: '2026-09-12',
+//         imagen: 'images/noticia-02.jpg',
+//         resumen: 'Comunicaciones y novedades institucionales.'
+//     },
 
-    {
-        id: 3,
-        titulo: 'Actualización de documentación',
-        fecha: '2026-09-08',
-        imagen: 'images/noticia-03.jpg',
-        resumen: 'Documentación y trámites del Colegio.'
-    },
+//     {
+//         id: 3,
+//         titulo: 'Actualización de documentación',
+//         fecha: '2026-09-08',
+//         imagen: 'images/noticia-03.jpg',
+//         resumen: 'Documentación y trámites del Colegio.'
+//     },
 
-    {
-        id: 4,
-        titulo: 'Nuevas propuestas de capacitación',
-        fecha: '2026-09-04',
-        imagen: 'images/noticia-04.jpg',
-        resumen: 'Conocé las actividades de formación continua.'
-    },
+//     {
+//         id: 4,
+//         titulo: 'Nuevas propuestas de capacitación',
+//         fecha: '2026-09-04',
+//         imagen: 'images/noticia-04.jpg',
+//         resumen: 'Conocé las actividades de formación continua.'
+//     },
 
-    {
-        id: 5,
-        titulo: 'Información institucional importante',
-        fecha: '2026-09-01',
-        imagen: 'images/noticia-05.jpg',
-        resumen: 'Comunicados y novedades de interés.'
-    },
+//     {
+//         id: 5,
+//         titulo: 'Información institucional importante',
+//         fecha: '2026-09-01',
+//         imagen: 'images/noticia-05.jpg',
+//         resumen: 'Comunicados y novedades de interés.'
+//     },
 
-    {
-        id: 6,
-        titulo: 'Actividades del Colegio',
-        fecha: '2026-08-28',
-        imagen: 'images/noticia-06.jpg',
-        resumen: 'Repaso de las últimas novedades institucionales.'
-    },
+//     {
+//         id: 6,
+//         titulo: 'Actividades del Colegio',
+//         fecha: '2026-08-28',
+//         imagen: 'images/noticia-06.jpg',
+//         resumen: 'Repaso de las últimas novedades institucionales.'
+//     },
 
-    {
-        id: 7,
-        titulo: 'Reunión de autoridades',
-        fecha: '2026-08-25',
-        imagen: 'images/noticia-07.jpg',
-        resumen: 'Información de la reunión institucional.'
-    },
+//     {
+//         id: 7,
+//         titulo: 'Reunión de autoridades',
+//         fecha: '2026-08-25',
+//         imagen: 'images/noticia-07.jpg',
+//         resumen: 'Información de la reunión institucional.'
+//     },
 
-    {
-        id: 8,
-        titulo: 'Nuevos convenios institucionales',
-        fecha: '2026-08-22',
-        imagen: 'images/noticia-08.jpg',
-        resumen: 'Conocé los nuevos convenios y beneficios.'
-    },
+//     {
+//         id: 8,
+//         titulo: 'Nuevos convenios institucionales',
+//         fecha: '2026-08-22',
+//         imagen: 'images/noticia-08.jpg',
+//         resumen: 'Conocé los nuevos convenios y beneficios.'
+//     },
 
-    {
-        id: 9,
-        titulo: 'Comunicado a los matriculados',
-        fecha: '2026-08-19',
-        imagen: 'images/noticia-09.jpg',
-        resumen: 'Información de interés para profesionales.'
-    },
+//     {
+//         id: 9,
+//         titulo: 'Comunicado a los matriculados',
+//         fecha: '2026-08-19',
+//         imagen: 'images/noticia-09.jpg',
+//         resumen: 'Información de interés para profesionales.'
+//     },
 
-    {
-        id: 10,
-        titulo: 'Actividades de formación continua',
-        fecha: '2026-08-15',
-        imagen: 'images/noticia-10.jpg',
-        resumen: 'Propuestas de formación para profesionales.'
-    },
+//     {
+//         id: 10,
+//         titulo: 'Actividades de formación continua',
+//         fecha: '2026-08-15',
+//         imagen: 'images/noticia-10.jpg',
+//         resumen: 'Propuestas de formación para profesionales.'
+//     },
 
-    {
-        id: 11,
-        titulo: 'Actualización de aranceles',
-        fecha: '2026-08-12',
-        imagen: 'images/noticia-11.jpg',
-        resumen: 'Información sobre aranceles profesionales.'
-    },
+//     {
+//         id: 11,
+//         titulo: 'Actualización de aranceles',
+//         fecha: '2026-08-12',
+//         imagen: 'images/noticia-11.jpg',
+//         resumen: 'Información sobre aranceles profesionales.'
+//     },
 
-    {
-        id: 12,
-        titulo: 'Información sobre matriculación',
-        fecha: '2026-08-08',
-        imagen: 'images/noticia-12.jpg',
-        resumen: 'Requisitos y procedimientos de matriculación.'
-    },
+//     {
+//         id: 12,
+//         titulo: 'Información sobre matriculación',
+//         fecha: '2026-08-08',
+//         imagen: 'images/noticia-12.jpg',
+//         resumen: 'Requisitos y procedimientos de matriculación.'
+//     },
 
-    {
-        id: 13,
-        titulo: 'Nuevas disposiciones institucionales',
-        fecha: '2026-08-05',
-        imagen: 'images/noticia-13.jpg',
-        resumen: 'Disposiciones y novedades del Colegio.'
-    },
+//     {
+//         id: 13,
+//         titulo: 'Nuevas disposiciones institucionales',
+//         fecha: '2026-08-05',
+//         imagen: 'images/noticia-13.jpg',
+//         resumen: 'Disposiciones y novedades del Colegio.'
+//     },
 
-    {
-        id: 14,
-        titulo: 'Agenda de actividades',
-        fecha: '2026-08-01',
-        imagen: 'images/noticia-14.jpg',
-        resumen: 'Próximas actividades institucionales.'
-    },
+//     {
+//         id: 14,
+//         titulo: 'Agenda de actividades',
+//         fecha: '2026-08-01',
+//         imagen: 'images/noticia-14.jpg',
+//         resumen: 'Próximas actividades institucionales.'
+//     },
 
-    {
-        id: 15,
-        titulo: 'Reunión con profesionales',
-        fecha: '2026-07-28',
-        imagen: 'images/noticia-15.jpg',
-        resumen: 'Encuentro de profesionales matriculados.'
-    },
+//     {
+//         id: 15,
+//         titulo: 'Reunión con profesionales',
+//         fecha: '2026-07-28',
+//         imagen: 'images/noticia-15.jpg',
+//         resumen: 'Encuentro de profesionales matriculados.'
+//     },
 
-    {
-        id: 16,
-        titulo: 'Novedades sobre legislación',
-        fecha: '2026-07-25',
-        imagen: 'images/noticia-16.jpg',
-        resumen: 'Información sobre legislación profesional.'
-    },
+//     {
+//         id: 16,
+//         titulo: 'Novedades sobre legislación',
+//         fecha: '2026-07-25',
+//         imagen: 'images/noticia-16.jpg',
+//         resumen: 'Información sobre legislación profesional.'
+//     },
 
-    {
-        id: 17,
-        titulo: 'Actividades de capacitación',
-        fecha: '2026-07-20',
-        imagen: 'images/noticia-17.jpg',
-        resumen: 'Nuevas propuestas de capacitación.'
-    },
+//     {
+//         id: 17,
+//         titulo: 'Actividades de capacitación',
+//         fecha: '2026-07-20',
+//         imagen: 'images/noticia-17.jpg',
+//         resumen: 'Nuevas propuestas de capacitación.'
+//     },
 
-    {
-        id: 18,
-        titulo: 'Comunicado institucional',
-        fecha: '2026-07-15',
-        imagen: 'images/noticia-18.jpg',
-        resumen: 'Información institucional del Colegio.'
-    }
+//     {
+//         id: 18,
+//         titulo: 'Comunicado institucional',
+//         fecha: '2026-07-15',
+//         imagen: 'images/noticia-18.jpg',
+//         resumen: 'Información institucional del Colegio.'
+//     }
 
-];
+// ];
 
 
 const noticiasPorPagina = 6;
@@ -178,7 +178,8 @@ function mostrarNoticias() {
     contenedor.innerHTML = '';
     const inicio = (paginaActual - 1) * noticiasPorPagina;
     const fin = inicio + noticiasPorPagina;
-    const noticiasPagina = noticias.slice(inicio, fin);
+    console.log(this.noticias)
+    const noticiasPagina = this.noticias.slice(inicio, fin);
 
     if (noticiasPagina.length === 0) {
         sinNoticias.classList.remove('d-none');
@@ -367,21 +368,32 @@ function crearPaginacion() {
 
 }
 
-
 /*
  * Actualizar listado y paginación
  */
 
-function actualizarPagina() {
+async function actualizarPagina() {
+    try {
+        const response = await fetch(`./api/public/ultimasnoticias`);
+        if (!response.ok) {
+            throw new Error(
+                'No se pudo obtener la noticia'
+            );
+        }
+        this.noticias = await response.json();
+        mostrarNoticias();
 
-    mostrarNoticias();
+        crearPaginacion();
 
-    crearPaginacion();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    } catch (error) {
+        console.error(error);
+        // mostrarError();
+    }
 
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
 
 }
 
