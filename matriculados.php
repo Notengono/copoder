@@ -1378,8 +1378,16 @@
                             <tr>
                                 <td class="body-item mbr-fonts-style display-7">292</td>
                                 <td class="body-item mbr-fonts-style display-7">Meroi Aranzazu Maria Del Rosario</td>
-                                <td class="body-item mbr-fonts-style display-7">Ruta 12 Km. 456</td>
-                                <td class="body-item mbr-fonts-style display-7">Sauce Montrul</td>
+                                <td class="body-item mbr-fonts-style display-7">Borges 8 esq. Almafuerte
+                                    <br>Av. Ramírez 363
+                                    <br>Los Chañares 580
+                                    <br>Ruta 12 Km. 456
+                                </td>
+                                <td class="body-item mbr-fonts-style display-7">Parana
+                                    <br>
+                                    <br>Oro Verde
+                                    <br>Sauce Montrul
+                                </td>
                                 <td class="body-item mbr-fonts-style display-7">343-4466100</td>
                                 <td class="body-item mbr-fonts-style display-7">Si</td>
                             </tr>
