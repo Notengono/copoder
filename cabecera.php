@@ -1,3 +1,9 @@
+<?php
+// Detecta dinámicamente si usas http o https y la carpeta del proyecto
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
+$root_url = $protocol . $_SERVER['HTTP_HOST'] . "/copoder_2026/";
+?>
+
 <!-- ========================================================= -->
 <!-- BARRA SUPERIOR -->
 <!-- ========================================================= -->
@@ -37,7 +43,7 @@
         <a class="navbar-brand" href="index.php">
             <div class="logo-container">
                 <div class="logo-placeholder">
-                    <img src="images/logo.jpg" class="d-block w-100" alt="COPODER">
+                    <img src="<?php echo $root_url; ?>images/logo.jpg" class="d-block w-100" alt="COPODER">
                 </div>
 
                 <div class="logo-text">
@@ -123,7 +129,7 @@
                     </a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link btn" href="contacto.html">Acceso Colegiados</a>
+                    <a class="nav-link btn" href="colegiados/">Acceso Colegiados</a>
                 </li>
             </ul>
 

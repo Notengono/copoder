@@ -9,7 +9,7 @@
     <meta name="description" content="Colegio de Podólogos de Entre Ríos">
 
     <title>Colegio de Podólogos de Entre Ríos</title>
-    <link rel="shortcut icon" href="images/logo-122x184.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo-184x184.jpg" type="image/x-icon">
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
