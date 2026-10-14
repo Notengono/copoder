@@ -27,38 +27,39 @@
                 <span>Colegiados</span>
                 <h2>Reglamento</h2>
             </div>
-        </div>
 
-        <div class="row g-3">
-            <div class="col-6 col-md-3">
-                <a href="reglamento_del_2020_03_09.php" target="_blank" class="quick-card">
-                    <i class="bi bi-feather"></i>
-                    <span> Reglamento 09/03/2020 </span>
-                </a>
-            </div>
 
-            <div class="col-6 col-md-3">
-                <a href="reglamento_del_2020_11_24.php" target="_blank" class="quick-card">
-                    <i class="bi bi-feather"></i>
-                    <span> Reglamento de Asamblea </span>
-                    <!-- <span> Reglamento 24/11/2020 </span> -->
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="reglamento_del_2020_12_11.php" target="_blank" class="quick-card">
-                    <i class="bi bi-buildings"></i>
-                    <span class="text-center">
-                        Proyecto Reglamentacion Profesional
-                    </span>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="organigrama.php" target="_blank" class="quick-card">
-                    <i class="bi bi-diagram-3"></i>
-                    <span>
-                        Organigrama
-                    </span>
-                </a>
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <a href="reglamento_del_2020_03_09.php" target="_blank" class="quick-card">
+                        <i class="bi bi-feather"></i>
+                        <span> Reglamento de Asamblea </span>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <a href="reglamento_del_2020_11_24.php" target="_blank" class="quick-card">
+                        <i class="bi bi-feather"></i>
+                        <span> Reglamento de Asamblea </span>
+                        <!-- <span> Reglamento 24/11/2020 </span> -->
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="reglamento_del_2020_12_11.php" target="_blank" class="quick-card">
+                        <i class="bi bi-buildings"></i>
+                        <span class="text-center">
+                            Proyecto Reglamentacion Profesional
+                        </span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="organigrama.php" target="_blank" class="quick-card">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>
+                            Organigrama
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>

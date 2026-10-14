@@ -64,7 +64,7 @@ $root_url = $protocol . $_SERVER['HTTP_HOST'] . "/copoder_2026/";
         <div class="collapse navbar-collapse" id="mainMenu">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="noticias.php">
+                    <a class="nav-link" href="biblioteca.php">
                         Biblioteca
                     </a>
                 </li>

@@ -721,13 +721,16 @@ section {
 }
 
 .news-grid-image {
-
     width: 100%;
-
     height: 215px;
-
     object-fit: cover;
+}
 
+.grid-image {
+    margin: auto;
+    width: 75%;
+    height: 50%;
+    object-fit: cover;
 }
 
 .news-grid-content {
