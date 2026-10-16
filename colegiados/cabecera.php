@@ -21,7 +21,7 @@ $root_url = $protocol . $_SERVER['HTTP_HOST'] . "/copoder_2026/";
                 <a href="#" aria-label="Instagram">
                     <i class="bi bi-instagram"></i>
                 </a>
-                <a href="#" aria-label="WhatsApp">
+                <a href="https://wa.me/5493434477339?text=Hola%2C%20quería%20hacer%20una%20consulta" target="_blank" aria-label="WhatsApp">
                     <i class="bi bi-whatsapp"></i>
                 </a>
                 <a href="#" aria-label="YouTube">
@@ -69,7 +69,7 @@ $root_url = $protocol . $_SERVER['HTTP_HOST'] . "/copoder_2026/";
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="noticias.php">
+                    <a class="nav-link" href="informacion.php">
                         Información
                     </a>
                 </li>
@@ -80,7 +80,7 @@ $root_url = $protocol . $_SERVER['HTTP_HOST'] . "/copoder_2026/";
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link btn" href="contacto.html">Salir</a>
+                    <a class="nav-link btn" href="logout.php">Salir</a>
                 </li>
             </ul>
 

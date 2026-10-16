@@ -1,0 +1,89 @@
+:root {
+    --azul: #126f91;
+    --azul-oscuro: #12486b;
+    --fondo: #f3f7fa;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--fondo);
+    color: #243746;
+}
+
+.login-container {
+    min-height: 100vh;
+}
+
+.login-card {
+    border: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(24, 57, 76, .12);
+}
+
+.login-form {
+    padding: 48px;
+}
+
+.login-brand {
+    color: var(--azul-oscuro);
+    font-weight: 700;
+}
+
+.login-icon {
+    width: 62px;
+    height: 62px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 22px;
+    border-radius: 16px;
+    color: var(--azul);
+    background: #e5f3f8;
+    font-size: 30px;
+}
+
+.form-control {
+    min-height: 50px;
+    border-color: #d6e1e8;
+}
+
+.form-control:focus {
+    border-color: var(--azul);
+    box-shadow: 0 0 0 .2rem rgba(18, 111, 145, .15);
+}
+
+.btn-ingresar {
+    min-height: 50px;
+    background: var(--azul);
+    border-color: var(--azul);
+    color: white;
+    font-weight: 600;
+}
+
+.btn-ingresar:hover {
+    background: var(--azul-oscuro);
+    color: white;
+}
+
+.login-info {
+    min-height: 580px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background:
+        linear-gradient(rgba(12, 61, 83, .80), rgba(12, 61, 83, .85)),
+        url('images/podologia.jpg') center / cover;
+}
+
+@media (max-width: 767px) {
+    .login-form {
+        padding: 30px 24px;
+    }
+
+    .login-info {
+        min-height: auto;
+        padding: 32px 24px;
+    }
+}

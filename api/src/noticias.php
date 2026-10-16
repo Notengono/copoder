@@ -18,3 +18,22 @@ $app->get(
         return $this->response->withJson($todos);
     }
 );
+$app->get(
+    '/comunicado/{id}',
+    function ($request, $response, $args) {
+        $sth = $this->db->prepare("SELECT * FROM `comunicados` WHERE id=:id");
+        $sth->execute([':id' => $args['id']]);
+        $todos = $sth->fetchObject();
+        return $this->response->withJson($todos);
+    }
+);
+
+$app->get(
+    '/ultimoscomunicados',
+    function ($request, $response, $args) {
+        $sth = $this->db->prepare("SELECT * FROM `comunicados` ORDER BY id DESC LIMIT 3");
+        $sth->execute();
+        $todos = $sth->fetchAll();
+        return $this->response->withJson($todos);
+    }
+);

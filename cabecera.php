@@ -1,7 +1,7 @@
 <?php
 // Detecta dinámicamente si usas http o https y la carpeta del proyecto
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
-$root_url = $protocol . $_SERVER['HTTP_HOST'] . "/copoder_2026/";
+$root_url = $protocol . $_SERVER['HTTP_HOST'] . "/muestra/";
 ?>
 
 <!-- ========================================================= -->
@@ -21,7 +21,8 @@ $root_url = $protocol . $_SERVER['HTTP_HOST'] . "/copoder_2026/";
                 <a href="#" aria-label="Instagram">
                     <i class="bi bi-instagram"></i>
                 </a>
-                <a href="#" aria-label="WhatsApp">
+                <a href="https://wa.me/5493434477339?text=Hola%2C%20quería%20hacer%20una%20consulta" target="_blank"
+                    aria-label="WhatsApp">
                     <i class="bi bi-whatsapp"></i>
                 </a>
                 <a href="#" aria-label="YouTube">
