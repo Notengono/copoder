@@ -1,3 +1,9 @@
+<?php
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
+// $root_url = $protocol . $_SERVER['HTTP_HOST'] . "/copoder_2026/";
+$root_url = $protocol . $_SERVER['HTTP_HOST'] . "/";
+session_start();
+?>
 <!-- https://chatgpt.com/share/6ad0f870-2ab4-83e9-b778-c1de5243fe66 -->
 <!DOCTYPE html>
 <html lang="es">
@@ -16,10 +22,6 @@
 </head>
 
 <?php
-$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
-$root_url = $protocol . $_SERVER['HTTP_HOST'] . "/copoder_2026/";
-session_start();
-
 if (empty($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }

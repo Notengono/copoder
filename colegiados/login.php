@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: index.php');
     exit;
@@ -44,20 +43,16 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 try {
     $conect = new mysqli(
         'localhost',
-        'root',
-        '',
-        'copoder' // Confirmar el nombre real de la base
+        'copoderc_laboratorio',
+        'Turnera_2020',
+        'copoderc_laboratorio' // Confirmar el nombre real de la base
     );
 
     $conect->set_charset('utf8mb4');
 
     // Compatible con las contraseñas guardadas mediante SHA2(..., 256)
-    $sql = "
-        SELECT identificacion
-        FROM usuarios_copo
-        WHERE identificacion = ?
-          AND clave = SHA2(?, 256)
-        LIMIT 1
+    $sql = "SELECT identificacion FROM usuarios_copo
+                WHERE identificacion = ? AND clave = SHA2(?, 256) LIMIT 1
     ";
 
     $stmt = $conect->prepare($sql);

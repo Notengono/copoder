@@ -226,107 +226,69 @@
                 <!-- ================================================= -->
 
                 <div class="col-lg-4">
-
                     <div class="content-title">
-
                         <h3>
                             Capacitaciones
                         </h3>
-
                         <a href="capacitaciones.html">
                             Ver todas
                         </a>
-
                     </div>
 
-
                     <div class="training-list">
-
-
-                        <a href="capacitacion.html?id=1" class="training-item">
-
+                        <!-- <a href="capacitacion.html?id=1" class="training-item"> -->
+                        <a href="capacitacion_0001.php" class="training-item">
                             <div class="training-date">
-
-                                AGO
-                                <strong>20</strong>
-
+                                NOV
+                                <strong>28</strong>
                             </div>
-
                             <div>
-
                                 <h4>
-                                    Actualización en Podología Clínica
+                                    Taller de alta frecuencia
                                 </h4>
-
                                 <span>
                                     Ver información
                                     <i class="bi bi-arrow-right"></i>
                                 </span>
-
                             </div>
-
                         </a>
 
-
-                        <a href="capacitacion.html?id=2" class="training-item">
-
+                        <a href="capacitacion_0002.php" class="training-item">
                             <div class="training-date">
-
-                                SEP
-                                <strong>05</strong>
-
+                                DIC
+                                <strong>19</strong>
                             </div>
-
                             <div>
-
                                 <h4>
-                                    Jornada de actualización profesional
+                                    Ortonixia conservadora
                                 </h4>
-
                                 <span>
                                     Ver información
                                     <i class="bi bi-arrow-right"></i>
                                 </span>
-
                             </div>
-
                         </a>
 
-
-                        <a href="capacitacion.html?id=3" class="training-item">
-
+                        <!-- <a href="capacitacion.html?id=3" class="training-item">
                             <div class="training-date">
-
                                 SEP
                                 <strong>19</strong>
-
                             </div>
-
                             <div>
-
                                 <h4>
                                     Taller de prevención y cuidado del pie
                                 </h4>
-
                                 <span>
                                     Ver información
                                     <i class="bi bi-arrow-right"></i>
                                 </span>
-
                             </div>
-
-                        </a>
-
+                        </a> -->
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
 
     <!-- ========================================================= -->
     <!-- FOOTER -->
@@ -395,17 +357,17 @@
 
                     <p>
                         <i class="bi bi-geo-alt"></i>
-                        Entre Ríos, Argentina
+                        Diamante 12, Paraná, Entre Rios, Argentina
                     </p>
 
                     <p>
                         <i class="bi bi-envelope"></i>
-                        contacto@colegiopodologos-er.ar
+                        colegiopodologos@hotmail.com
                     </p>
 
                     <p>
                         <i class="bi bi-telephone"></i>
-                        (0343) 000-0000
+                        (0343) 468-3292
                     </p>
 
                 </div>

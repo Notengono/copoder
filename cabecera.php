@@ -1,7 +1,8 @@
 <?php
 // Detecta dinámicamente si usas http o https y la carpeta del proyecto
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
-$root_url = $protocol . $_SERVER['HTTP_HOST'] . "/muestra/";
+$root_url = $protocol . $_SERVER['HTTP_HOST'] . "/";
+// $root_url = $protocol . $_SERVER['HTTP_HOST'] . "/muestra/";
 ?>
 
 <!-- ========================================================= -->

@@ -158,6 +158,12 @@
     line-height: 1.4;
 }
 
+.noticia-contenido strong {
+    font-family: 'PoppinsBold';
+    font-weight: 900;
+    color: #24343d;
+}
+
 /* ====================================================== */
 /* RESPONSIVE */
 /* ====================================================== */

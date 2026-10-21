@@ -79,3 +79,13 @@ function formatearFecha(fecha) {
             }
         );
 }
+
+function copiarTexto(url) {
+    navigator.clipboard.writeText(`https://colegiodepodologosdeentrerios.ar${url}`)
+        .then(() => {
+            alert("¡Texto copiado!");
+        })
+        .catch(err => {
+            console.error("Error al copiar: ", err);
+        });
+}

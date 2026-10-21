@@ -1,7 +1,8 @@
 <?php
 // Detecta dinámicamente si usas http o https y la carpeta del proyecto
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
-$root_url = $protocol . $_SERVER['HTTP_HOST'] . "/copoder_2026/";
+$root_url = $protocol . $_SERVER['HTTP_HOST'] . "/";
+// $root_url = $protocol . $_SERVER['HTTP_HOST'] . "/copoder_2026/";
 ?>
 
 <!-- ========================================================= -->
@@ -40,7 +41,7 @@ $root_url = $protocol . $_SERVER['HTTP_HOST'] . "/copoder_2026/";
 <nav class="navbar navbar-expand-lg main-navbar">
     <div class="container">
         <!-- LOGO -->
-        <a class="navbar-brand" href="index.php">
+        <a class="navbar-brand" href="https://colegiodepodologosdeentrerios.ar/">
             <div class="logo-container">
                 <div class="logo-placeholder">
                     <img src="<?php echo $root_url; ?>images/logo.jpg" class="d-block w-100" alt="COPODER">
