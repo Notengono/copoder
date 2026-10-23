@@ -79,22 +79,22 @@
                                 <td class="body-item mbr-fonts-style display-7">Colon 452</td>
                                 <td class="body-item mbr-fonts-style display-7">Parana</td>
                                 <td class="body-item mbr-fonts-style display-7">03434318632<br>3436208151</td>
-                                <td class="body-item mbr-fonts-style display-7">Si</td>
+                                <td class="body-item mbr-fonts-style display-7">No</td>
                             </tr>
 
-                            <tr>
+                            <!-- <tr>
                                 <td class="body-item mbr-fonts-style display-7">30</td>
                                 <td class="body-item mbr-fonts-style display-7">Villanueva Emilce Leonor</td>
                                 <td class="body-item mbr-fonts-style display-7">Fco. Beiro 263</td>
                                 <td class="body-item mbr-fonts-style display-7">Rosario del Tala</td>
                                 <td class="body-item mbr-fonts-style display-7">03445404409</td>
                                 <td class="body-item mbr-fonts-style display-7">No</td>
-                            </tr>
+                            </tr> -->
 
                             <tr>
                                 <td class="body-item mbr-fonts-style display-7">37</td>
                                 <td class="body-item mbr-fonts-style display-7">Ledesma Hector Felipe</td>
-                                <td class="body-item mbr-fonts-style display-7">D. Dasso 166</td>
+                                <td class="body-item mbr-fonts-style display-7">Moreno 376</td>
                                 <td class="body-item mbr-fonts-style display-7">Diamante</td>
                                 <td class="body-item mbr-fonts-style display-7">343-4464785</td>
                                 <td class="body-item mbr-fonts-style display-7">Si</td>
@@ -159,7 +159,7 @@
                                 <td class="body-item mbr-fonts-style display-7">Lascano Clotilde Maria Catalina</td>
                                 <td class="body-item mbr-fonts-style display-7">E. Carbo 916 3 E</td>
                                 <td class="body-item mbr-fonts-style display-7">Parana</td>
-                                <td class="body-item mbr-fonts-style display-7">0343-4312597<br>155108753</td>
+                                <td class="body-item mbr-fonts-style display-7">155108753</td>
                                 <td class="body-item mbr-fonts-style display-7">Si</td>
                             </tr>
 
@@ -223,7 +223,7 @@
                                 <td class="body-item mbr-fonts-style display-7">25 de Mayo 475</td>
                                 <td class="body-item mbr-fonts-style display-7">Hasenkamp</td>
                                 <td class="body-item mbr-fonts-style display-7">0343-4158288</td>
-                                <td class="body-item mbr-fonts-style display-7">Si</td>
+                                <td class="body-item mbr-fonts-style display-7">No</td>
                             </tr>
 
                             <tr>
@@ -337,7 +337,7 @@
                             <tr>
                                 <td class="body-item mbr-fonts-style display-7">159</td>
                                 <td class="body-item mbr-fonts-style display-7">Barbeito Patricia Maria Lucia</td>
-                                <td class="body-item mbr-fonts-style display-7">Dr. Luis Agote 905 Piso PB</td>
+                                <td class="body-item mbr-fonts-style display-7">Maipú 687</td>
                                 <td class="body-item mbr-fonts-style display-7">Parana</td>
                                 <td class="body-item mbr-fonts-style display-7">343-3002373</td>
                                 <td class="body-item mbr-fonts-style display-7">Si</td>
@@ -391,7 +391,7 @@
                             <tr>
                                 <td class="body-item mbr-fonts-style display-7">165</td>
                                 <td class="body-item mbr-fonts-style display-7">Tataren Daniel Gaston</td>
-                                <td class="body-item mbr-fonts-style display-7">Sebastian Vazquez 555. PISO 2 Depto. 48, Barrio 33 Orientales<br>Consultorios ALMA, Carbo 263<br>Pellegrini 418</td>
+                                <td class="body-item mbr-fonts-style display-7">Quiroz 1923<br>Pellegrini 418</td>
                                 <td class="body-item mbr-fonts-style display-7">Parana</td>
                                 <td class="body-item mbr-fonts-style display-7">343-4713871</td>
                                 <td class="body-item mbr-fonts-style display-7">Si</td>
@@ -445,7 +445,7 @@
                             <tr>
                                 <td class="body-item mbr-fonts-style display-7">172</td>
                                 <td class="body-item mbr-fonts-style display-7">Palavecino Nora Malvina</td>
-                                <td class="body-item mbr-fonts-style display-7">Estrella Federal 1230</td>
+                                <td class="body-item mbr-fonts-style display-7">Estrella Federal 1230<br>Hospital Pascual Palma</td>
                                 <td class="body-item mbr-fonts-style display-7">Parana</td>
                                 <td class="body-item mbr-fonts-style display-7">343-5129129</td>
                                 <td class="body-item mbr-fonts-style display-7">Sí</td>
@@ -493,7 +493,7 @@
                                 <td class="body-item mbr-fonts-style display-7">Salta 639</td>
                                 <td class="body-item mbr-fonts-style display-7">Parana</td>
                                 <td class="body-item mbr-fonts-style display-7">343-4223964<br>343-5110535</td>
-                                <td class="body-item mbr-fonts-style display-7">Si</td>
+                                <td class="body-item mbr-fonts-style display-7">No</td>
                             </tr>
 
                             <tr>
@@ -1082,7 +1082,7 @@
                             <tr>
                                 <td class="body-item mbr-fonts-style display-7">255</td>
                                 <td class="body-item mbr-fonts-style display-7">Premaries Giuliana Belen</td>
-                                <td class="body-item mbr-fonts-style display-7">Gardel 950<br>San Martin 787 Local 2</td>
+                                <td class="body-item mbr-fonts-style display-7">Posadas 1146</td>
                                 <td class="body-item mbr-fonts-style display-7">Villaguay</td>
                                 <td class="body-item mbr-fonts-style display-7">3455-446588</td>
                                 <td class="body-item mbr-fonts-style display-7">No</td>
@@ -1573,14 +1573,14 @@
                                 <td class="body-item mbr-fonts-style display-7">No</td>
                             </tr>
 
-                            <tr>
+                            <!-- <tr>
                                 <td class="body-item mbr-fonts-style display-7">313</td>
                                 <td class="body-item mbr-fonts-style display-7">Spahn Roskopf Sabrina</td>
                                 <td class="body-item mbr-fonts-style display-7">Urquiza S/N°</td>
                                 <td class="body-item mbr-fonts-style display-7">Colonia Ensayo</td>
                                 <td class="body-item mbr-fonts-style display-7">3434624064</td>
                                 <td class="body-item mbr-fonts-style display-7">Si</td>
-                            </tr>
+                            </tr> -->
 
                             <tr>
                                 <td class="body-item mbr-fonts-style display-7">314</td>
@@ -1718,16 +1718,14 @@
                                 <td class="body-item mbr-fonts-style display-7">Si</td>
                             </tr>
 
-                            <tr>
+                            <!-- <tr>
                                 <td class="body-item mbr-fonts-style display-7">329</td>
                                 <td class="body-item mbr-fonts-style display-7">Micheloud Maria Belen</td>
-                                <!-- <td class="body-item mbr-fonts-style display-7">Espinillo Norte, Ruta 18 Km26.</td> -->
                                 <td class="body-item mbr-fonts-style display-7">Av. San Martin 918</td>
                                 <td class="body-item mbr-fonts-style display-7">Viale</td>
-                                <!-- <td class="body-item mbr-fonts-style display-7">Parana</td> -->
                                 <td class="body-item mbr-fonts-style display-7">3434803574</td>
                                 <td class="body-item mbr-fonts-style display-7">No</td>
-                            </tr>
+                            </tr> -->
 
                             <tr>
                                 <td class="body-item mbr-fonts-style display-7">330</td>
